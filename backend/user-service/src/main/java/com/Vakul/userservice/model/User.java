@@ -14,10 +14,10 @@ public class User {
     private String password;
     private String role;
     private String email;
-    private int mobileNumber;
+    private long mobileNumber;
     private boolean confirmed;
 
-    public User(String userName, String password, String role, String email, int mobileNumber, boolean confirmed) {
+    public User(String userName, String password, String role, String email, long mobileNumber, boolean confirmed) {
         this.userName = userName;
         this.password = password;
         this.role = role;
@@ -69,11 +69,11 @@ public class User {
         this.email = email;
     }
 
-    public int getMobileNumber() {
+    public long getMobileNumber() {
         return mobileNumber;
     }
 
-    public void setMobileNumber(int mobileNumber) {
+    public void setMobileNumber(long mobileNumber) {
         this.mobileNumber = mobileNumber;
     }
 
